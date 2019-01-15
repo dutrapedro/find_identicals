@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name = 'find_identical'
-    s.version = '1.0.2'
+    s.version = '1.0.3'
     s.executables << 'identical'
     s.date = '2019-01-14'
     s.summary = "Find duplicate id in HTML document"
