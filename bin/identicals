@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'find_identicals'
+
+identicals = FindIdenticals.new(ARGV.first).identicals
+
+puts "The following ID's are identicals:"
+identicals.each { | id | puts "\t- ##{id}" }
