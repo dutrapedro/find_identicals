@@ -14,7 +14,6 @@ Gem::Specification.new do |s|
     s.email = 'pedrovpdutra@gmail.com'
     s.files = ['lib/find_identical.rb', 'lib/find_identical/reader.rb']
     s.homepage = 'https://github.com/dutrapedro/find_identicals'
-    s.source_code = 'https://github.com/dutrapedro/find_identicals'
     s.license = 'MIT'
     s.add_runtime_dependency 'typhoeus', '~> 1.3', '>= 1.3.1'
     s.add_development_dependency 'minitest', '~> 5.11', '>= 5.11.3'
