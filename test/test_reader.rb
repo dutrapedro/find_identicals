@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'minitest/autorun'
 require 'find_identicals/reader'
 
@@ -14,7 +16,7 @@ class TestReader < Minitest::Test
   end
 
   def test_html_document_raise_an_error_when_local_document_does_not_exists
-    assert_raises { | a | html_document('not_existent_path') }
+    assert_raises { html_document('not_existent_path') }
   end
 
   def test_html_document_is_not_emtpy_for_existent_remote_document
