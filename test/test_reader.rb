@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
-require 'find_identicals/reader'
+require 'find_identical/reader'
 
 class TestReader < Minitest::Test
   include Reader

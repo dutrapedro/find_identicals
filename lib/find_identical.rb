@@ -1,13 +1,13 @@
-require 'find_identicals/reader'
+require 'find_identical/reader'
 
-class FindIdenticals
+class FindIdentical
     include Reader
     
     def initialize(document_source)
         @html_document = html_document(document_source)
     end
 
-    def identicals
+    def identical
         all_ids = html_ids
         all_ids
             .find_all { |id| all_ids.count(id) > 1 }

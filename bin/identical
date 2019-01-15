@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'find_identical'
+
+identical = FindIdentical.new(ARGV.first).identical
+
+if identical.empty?
+  puts "Any duplicate ID's found!"
+else
+  puts "The following ID's are identical:"
+  identical.each { | id | puts "\t- ##{id}" }
+end
