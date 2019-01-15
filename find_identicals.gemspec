@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name = 'find_identicals'
-    s.version = '1.0.1'
+    s.version = '1.0.2'
     s.executables << 'identicals'
     s.date = '2019-01-14'
     s.summary = "Find duplicate id in HTML document"
@@ -15,5 +15,6 @@ Gem::Specification.new do |s|
     s.files = ['lib/find_identicals.rb', 'lib/find_identicals/reader.rb']
     s.homepage = 'https://github.com/dutrapedro/find_identicals'
     s.license = 'MIT'
+    s.add_runtime_dependency 'typhoeus', '~> 1.3', '>= 1.3.1'
     s.add_development_dependency 'minitest', '~> 5.11', '>= 5.11.3'
 end

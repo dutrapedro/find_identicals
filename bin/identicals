@@ -4,5 +4,9 @@ require 'find_identicals'
 
 identicals = FindIdenticals.new(ARGV.first).identicals
 
-puts "The following ID's are identicals:"
-identicals.each { | id | puts "\t- ##{id}" }
+if identicals.empty?
+  puts "Any duplicate ID's found!"
+else
+  puts "The following ID's are identical:"
+  identicals.each { | id | puts "\t- ##{id}" }
+end

@@ -1,4 +1,4 @@
-require 'net/http'
+require 'typhoeus'
 
 module Reader
     def html_document(source)
@@ -13,7 +13,7 @@ module Reader
     
 
     def remote_html(address)
-        Net::HTTP.get(URI(address))
+        Typhoeus.get(address).body
     end
     
 
