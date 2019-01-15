@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
     s.authors = ["Pedro Dutra"]
     s.email = 'pedrovpdutra@gmail.com'
     s.files = ['lib/find_identicals.rb', 'lib/find_identicals/reader.rb']
-    s.homepage = 'http://rubygems.org/gems/find_identicals'
+    s.homepage = 'https://github.com/dutrapedro/find_identicals'
     s.license = 'MIT'
     s.add_development_dependency 'minitest', '~> 5.11', '>= 5.11.3'
 end
