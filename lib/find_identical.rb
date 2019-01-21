@@ -1,10 +1,8 @@
 require 'find_identical/reader'
 
 class FindIdentical
-    include Reader
-    
     def initialize(document_source)
-        @html_document = html_document(document_source)
+        @html_document = Reader.html_document(document_source)
     end
 
     def identical

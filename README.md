@@ -9,3 +9,5 @@ Find Identical is a Ruby Gem that scans HTML documents for duplicate ID attribut
 # Usage
 - `gem install find_identical`
 - `$ identical [/path/to/html or https://some-url]`
+- Use a path to get duplicate ID's on file, before browser renderization.
+- Use a URL to get duplciate ID's after browser renderization.

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name = 'find_identical'
-    s.version = '0.0.3'
+    s.version = '1.0.0'
     s.executables << 'identical'
     s.date = '2019-01-14'
     s.summary = "Find duplicate id in HTML document"
@@ -17,4 +17,5 @@ Gem::Specification.new do |s|
     s.license = 'MIT'
     s.add_runtime_dependency 'typhoeus', '~> 1.3', '>= 1.3.1'
     s.add_development_dependency 'minitest', '~> 5.11', '>= 5.11.3'
+    s.add_development_dependency 'mocha', '~> 1.8'
 end
